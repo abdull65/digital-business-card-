@@ -1,26 +1,17 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+* { box-sizing: border-box; margin: 0; padding: 0;
 }
 
 /* digital business card section */
 
-html {
-  scroll-behavior: smooth;
+html { scroll-behavior: smooth;
 }
 
 :root {
-  --primary-color-dark: #2c3e50;
-  --primary-color-light: #eeeeee;
+  --primary-color-dark: #2c3e50; --primary-color-light: #eeeeee;
 }
 
-body {
-  background: var(--primary-color-dark);
-  color: var(--primary-color-light);
-  font-family: 'lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+body { background: var(--primary-color-dark); color: var(--primary-color-light); font-family: 'lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1rem; font-weight: 
+    400;
   line-height: 1.5;
 }
 
@@ -29,146 +20,80 @@ body {
 }
 
 #card_container {
-  background-color: var(--primary-color-dark);
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin: 1rem auto;
+  background-color: var(--primary-color-dark); display: flex; flex-direction: column; max-width: 300px; margin: 1rem auto;
 }
 
-.card_img_box {
-  width: 100%;
+.card_img_box { width: 100%;
 }
 
-.card_img_box img {
-  width: 100%;
+.card_img_box img { width: 100%;
 }
 
-.card_text_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  line-height: 2rem;
-  margin-top: 0.5;
+.card_text_box { display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 2rem; margin-top: 0.5;
 }
 
-.card_text_box .name {
-  font-size: 1.2rem;
+.card_text_box .name { font-size: 1.2rem;
 }
 
-.card_text_box .career {
-  font-size: 1rem;
+.card_text_box .career { font-size: 1rem;
 }
 
-.card_text_box .web_link,
-.card_text_box .web_link {
-  font-size: 1rem;
-  color: var(--primary-color-light);
+.card_text_box .web_link { font-size: 1rem; color: var(--primary-color-light);transition: font 20ms ease-in-out;
+}
+.card_text_box .web_link:hover { font-weight: bold;
 }
 
-.card_text_box .contact_email {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  width: 200px;
-  border-radius: 8px;
-  padding: .3rem;
+.card_text_box .contact_email { display: inline-flex; align-items: center; justify-content: center; background-color: #fff; width: 200px; border-radius: 8px; padding: .3rem;
+}
+.card_text_box .contact_email:active { transform: scale(1.1);
 }
 
-.card_text_box .contact_email svg,
-.card_text_box .contact_email a {
-  display: flex;
-  align-items: center;
-  fill: var(--primary-color-dark);
-  stroke: var(--primary-color-light);
-  font-size: 0.8rem;
-  color: var(--primary-color-dark);
+.card_text_box .contact_email svg, .card_text_box .contact_email a { display: flex; align-items: center; fill: var(--primary-color-dark); stroke: var(--primary-color-light); font-size: 
+  0.8rem; color: var(--primary-color-dark);
 }
 
-.change_bg-btn {
-  display: inline-flex;
-  margin-top: .8rem;
+.change_bg-btn { display: inline-flex; margin-top: .8rem;
 }
 
-.toggle {
-  display: inline-flex;
-  align-items: center;
+.toggle { display: inline-flex; align-items: center;
 }
 
-.toggle svg {
-  cursor: pointer;
-  display: inline-flex;
+.toggle svg { cursor: pointer; display: inline-flex;
 }
 
-.left_toggle svg {
-  fill: #f5f5f5;
-  stroke: var(--primary-color-dark);
-  margin-right: -.2rem;
+.left_toggle svg { fill: #f5f5f5; stroke: var(--primary-color-dark); margin-right: -.2rem;
 }
 
-.right_toggle svg {
-  fill: #f5f5f5;
-  stroke: var(--primary-color-dark);
-  margin-left: -.3rem;
+.right_toggle svg { fill: #f5f5f5; stroke: var(--primary-color-dark); margin-left: -.3rem;
 }
 
-.left_toggle svg:active,
-.right_toggle svg:active {
-  transform: scale(1.1);
+.left_toggle svg:active, .right_toggle svg:active { transform: scale(1.1);
 }
 
-.card_text_box .about_me,
-.card_text_box .interest {
-  font-size: 0.9rem;
-  text-align: left;
-  line-height: 1.5;
-  margin-top: 1.5rem;
-  margin-bottom: -1rem;
-  padding-left: 0.5rem;
+.card_text_box .about_me, .card_text_box .interest { font-size: 0.9rem; text-align: left; line-height: 1.5; margin-top: 1.5rem; margin-bottom: -1rem; padding-left: 0.5rem; 
   padding-right: 0.5rem;
 }
 
-.card_text_box .about_me .heading,
-.card_text_box .interest .heading {
-  font-size: 1.1rem;
+.card_text_box .about_me .heading, .card_text_box .interest .heading { font-size: 1.1rem;
 }
 
-.about_me_paragraph,
-.interest_paragraph {
-  font-size: 0.8rem;
+.about_me_paragraph, .interest_paragraph { font-size: 0.8rem;
 }
 
-.card_footer_box {
-  background-color: #1a2433;
-  margin-top: 2rem;
+.card_footer_box { background-color: #1a2433; margin-top: 2rem;
 }
 
-.card_footer_box .contact_icons_box {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  width: 100%;
-  padding: 0.6rem 0 0.2rem 0;
+.card_footer_box .contact_icons_box { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; width: 100%; padding: 0.6rem 0 0.2rem 0;
 }
 
-.icon_box {
-  background-color: #f5f5f5;
-  height: 25px;
-  width: 25px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  vertical-align: center;
+.icon_box { background-color: #f5f5f5; height: 25px; width: 25px; display: inline-flex; flex-direction: column; align-items: center; vertical-align: center; transition: background 
+  300ms linear;
 }
 
-.icon_box svg {
-  width: 20px;
-  height: 20px;
-  stroke: var(--primary-color-dark);
-  fill: var(--primary-color-dark);
-  stroke-width: 1;
-  margin-top: .2rem;
+.icon_box:hover { background-color: #1a2433;
+}
+
+.icon_box svg { width: 20px; height: 20px; stroke: var(--primary-color-dark); fill: var(--primary-color-dark); stroke-width: 1; margin-top: .2rem;transition: color 200ms linear;
+}
+.icon_box svg:hover { stroke: #f5f5f5; fill: #f5f5f5;
 }
