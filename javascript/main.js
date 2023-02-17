@@ -1,4 +1,5 @@
 "strict";
+const bodyEl = document.getElementById("card_body");
 const containerEl = document.getElementById("card_container");
 const leftToggleEl = document.querySelector(".feather-toggle-left");
 const rightToggleEl = document.querySelector(".feather-toggle-right");
@@ -16,6 +17,7 @@ leftToggleEl.addEventListener("click", function () {
   rightToggleEl.style.stroke = "#f5f5f5";
   contactEmailEl.style.backgroundColor = "#2c3e50";
   emailLinkEl.style.color = "#f5f5f5";
+  bodyEl.style.backgroundColor = "#2c3e50";
 });
 rightToggleEl.addEventListener("click", function () {
   containerEl.style.backgroundColor = "#2c3e50";
@@ -27,4 +29,5 @@ rightToggleEl.addEventListener("click", function () {
   leftToggleEl.style.stroke = "#2c3e50";
   contactEmailEl.style.backgroundColor = "#f5f5f5";
   emailLinkEl.style.color = "#2c3e50";
+  bodyEl.style.backgroundColor = "#f5f5f5";
 });
