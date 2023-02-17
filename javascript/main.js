@@ -17,9 +17,11 @@ leftToggleEl.addEventListener("click", function () {
   rightToggleEl.style.stroke = "#f5f5f5";
   contactEmailEl.style.backgroundColor = "#2c3e50";
   emailLinkEl.style.color = "#f5f5f5";
-  bodyEl.style.backgroundColor = "#2c3e50";
+  bodyEl.style.backgroundColor = "#f5f5f5";
+  containerEl.style.boxShadow = ".1px .1px 2px rgba(0, 0, 0, 0.5)";
 });
 rightToggleEl.addEventListener("click", function () {
+  bodyEl.style.backgroundColor = "#2c3e50";
   containerEl.style.backgroundColor = "#2c3e50";
   containerEl.style.color = "#f5f5f5";
   webLinkEl.style.color = "#f5f5f5";
@@ -29,5 +31,5 @@ rightToggleEl.addEventListener("click", function () {
   leftToggleEl.style.stroke = "#2c3e50";
   contactEmailEl.style.backgroundColor = "#f5f5f5";
   emailLinkEl.style.color = "#2c3e50";
-  bodyEl.style.backgroundColor = "#f5f5f5";
+  containerEl.style.boxShadow = ".1px .1px 2px #fff";
 });
